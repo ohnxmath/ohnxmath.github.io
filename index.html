@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ohnx + math</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>ohnx + math</h1>
+            <p>Math is pretty cool. Here's some tools that I (ohnx) have made for people who deal with math.</p>
+        </header>
+        <section>
+            <h1>Current Projects</h1>
+            <article class="lr-split">
+                <div class="left">
+                    <img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                </div>
+                <div class="right">
+                    <h2>leo</h2>
+                    <p>parser and calculator for most simple math. uses ieee754 doubles.</p>
+                    <p><a class="btn" href="https://github.com/ohnxmath/leo">More info</a></p>
+                </div>
+            </article>
+            <article class="lr-split">
+                <div class="left">
+                    <img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                </div>
+                <div class="right">
+                    <h2>polynomials</h2>
+                    <p>parser and calculator for some simple polynomials. uses ieee754 doubles.</p>
+                    <p><a class="btn" href="https://github.com/ohnxmath/polynomials">More info</a></p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h1>Planned Projects</h1>
+            <article class="lr-split">
+                <div class="left">
+                    <img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                </div>
+                <div class="right">
+                    <h2>unknown name</h2>
+                    <p>simple bignum calculator</p>
+                    <p><a class="btn" href="#">More info</a></p>
+                </div>
+            </article>
+            <article class="lr-split">
+                <div class="left">
+                    <img class="image" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+                </div>
+                <div class="right">
+                    <h2>unknown name</h2>
+                    <p>???</p>
+                    <p><a class="btn" href="#">More info</a></p>
+                </div>
+            </article>
+        </section>
+        <footer>
+            Made by <a href="https://masonx.ca/">ohnx</a>.
+        </footer>
+        <script>
+            var choices = [
+            ["#EDDE5D", "#F09819"], ["#F45C43", "#EB3349"], ["#D31027", "#EA384D"], ["#734B6D", "#42275A"], ["#4CA1AF", "#2C3E50"],
+            ["#D04ED6", "#834D9B"], ["#A8E063", "#56AB2F"], ["#EECDA3", "#EF629F"], ["#FF9068", "#FD746C"], ["#C9FFBF", "#FFAFBD"],
+            ["#F1F2B5", "#135058"], ["#DC2430", "#7B4397"], ["#267871", "#136A8A"], ["#43CEA2", "#185A9D"], ["#FE8C00", "#F83600"]];
+            (function() {
+                var a = document.getElementsByClassName("image");
+                var cn, rc;
+                for (var i = 0; i < a.length; i++) {
+                    cn = Math.floor(Math.random()*choices.length);
+                    rc = choices[cn];
+                    choices.splice(cn, 1);
+                    a[i].style.background = "linear-gradient(135deg, " + rc[0] + ", " + rc[1] + ")";
+                }
+            })();
+        </script>
+    </body>
+</html>
